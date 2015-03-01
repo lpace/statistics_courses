@@ -1,0 +1,1 @@
+These are a series of courses created in swirlify to teach behavioral and social science researchers, students, and teachers to use R for statisitics. These lessons use R to teach R in the swirl environment.
