@@ -1,0 +1,14 @@
+- Class: meta
+  Course: Introduction to R
+  Lesson: Working with Vectors
+  Author: Larry Pace
+  Type: Standard
+  Organization: Keiser University
+  Version: 2.2.21
+  
+- Class: text
+  Output: Dr. Larry here again. In this lesson you will learn more about working with both numeric and character vectors. There are actually six different kinds of vectors in R. They are integer, real, character, logical, complex, and raw. These are called "atomic" vectors in R, but don't worry, they're not explosive!
+
+- Class: text
+  Output: As you learned in your previous lesson, to R a single number or character is also a vector. R uses a recycling property to go through the elements of a vector, and when you work with vectors of different lengths, this can make many statistical computations easier.
+\
