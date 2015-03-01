@@ -11,4 +11,16 @@
 
 - Class: text
   Output: As you learned in your previous lesson, to R a single number or character is also a vector. R uses a recycling property to go through the elements of a vector, and when you work with vectors of different lengths, this can make many statistical computations easier.
-\
+
+- Class: cmd_question
+  Output: "Let's use a shortcut feature of R to get a sequence of integers from 1 to 10. At the command prompt, type x <- 1:10 and press Enter."
+  CorrectAnswer: x <- 1:10
+  AnswerTests: omnitest(correctExpr = 'x <- 1:10')
+  Hint: Type x <- 1:10 and press Enter.
+
+- Class: cmd_question
+  Output: As we did in our previous lesson, check the structure of x by typing str(x) and pressing Enter.
+  CorrectAnswer: str(x)
+  AnswerTests: omnitest(correctExpr = 'str(x)')
+  Hint: Type str(x) and press Enter.
+

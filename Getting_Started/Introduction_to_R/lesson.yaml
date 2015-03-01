@@ -23,3 +23,49 @@
 
 - Class: text
   Output: Note the [1] in front of the answer to your addition problem. It is an index telling you that to R, 4 is a vector of length 1. R makes use of "vectorization" in many ways that help with statistical computations, and help you avoid explicit looping in many cases.
+
+- Class: cmd_question
+  Output: Let's create an object called x and assign the result of our addition to that object. The assignment operator in R is <-, the combination of a "less than" sign and a dash. Think of it as a leftward-pointing arrow. Whatever is on the right side is assigned to the "object" on the left side. At the command prompt, type x <- 2 + 2 and press Enter.
+  CorrectAnswer: x <- 2 + 2
+  AnswerTests: omnitest(correctExpr = 'x <- 2 + 2')
+  Hint: Type x <- 2 + 2 and press Enter.
+
+- Class: text
+  Output: In this case, R did not print your answer, but you can see the contents of an R object by typing its name and pressing Enter.
+
+- Class: cmd_question
+  Output: At the command prompt, type x and press Enter.
+  CorrectAnswer: x
+  AnswerTests: omnitest(correctExpr = 'x')
+  Hint: Type x and press Enter.
+
+- Class: cmd_question
+  Output: One of the important functions you should learn in R is str(). It will tell you about the structure of an R object. For more complex objects, you will get more information than for simple objects. Type str(x) at the command prompt and press Enter.
+  CorrectAnswer: str(x)
+  AnswerTests: omnitest(correctExpr= 'str(x)')
+  Hint: Type str(x) and press Enter.
+
+- Class: cmd_question
+  Output: Correct. This tells us x is a numeric object with the value of 4. Like str(), the math operators in R are also functions themselves. These functions include addition, subtraction, multiplication, division, and exponentiation. Let's practice each of these functions with our named object x. At the command prompt, type x + 2 and press Enter.
+  CorrectAnswer: x + 2
+  AnswerTests: omnitest(correctExpr= 'x + 2')
+  Hint: Type x + 2 and press Enter.
+
+- Class: cmd_question
+  Output: Now, let's try subtracting x from itself. Type x - x and press Enter.
+  CorrectAnswer: x - x
+  AnswerTests: omnitest(correctExpr = 'x - x')
+  Hint: Type x - x and press Enter.
+
+- Class: cmd_question
+  Output: Let's multiply x by itself. Type x * x and press Enter.
+  CorrectAnswer: x * x
+  AnswerTests: omnitest(correctExpr = 'x * x')
+  Hint: Type x * x and press Enter.
+
+- Class: cmd_question
+  Output: Now, divide x by itself. You should be able to predict the answer. Type x / x and press Enter.
+  CorrectAnswer: x / x
+  AnswerTests: omnitest(correctExpr = 'x / x')
+  Hint: Type x / x and press Enter.
+
