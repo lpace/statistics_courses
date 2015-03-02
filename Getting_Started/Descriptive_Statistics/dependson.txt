@@ -1,0 +1,3 @@
+openintro
+fBasics
+prettyR

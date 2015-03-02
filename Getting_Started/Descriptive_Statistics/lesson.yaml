@@ -9,4 +9,16 @@
 - Class: text
   Output: In this lesson, you will learn about measures of central tendency and variability. The three common measures of central tendency are the mean, the median, and the mode. Each of these will be most appropriate in different situations. 
 
-- 
+- Class: cmd_question
+  Output: You arleady have a data frame named cars in your workspace. Type cars and press Enter to see the data.
+  CorrectAnswer: cars
+  AnswerTests: omnitest(correctExpr = 'cars')
+  Hint: Type cars and press Enter.
+
+- Class: text
+  Output: For each of 54 individual cars, we have the type, the price in thousands of U.S. dollars, the miles per gallon obtained in the city, the type of drive train (front, rear or 4WD), the number of passengers the car will carry, and the weight of the car in pounds.
+
+- Class: figure
+  Output: Histogram of city mpg
+  Figure: 
+  FigureType: new
