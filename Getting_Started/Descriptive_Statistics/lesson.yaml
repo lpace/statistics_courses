@@ -1,0 +1,10 @@
+- Class: meta
+  Course: Getting Started
+  Lesson: Descriptive Statistics
+  Author: your name goes here
+  Type: Standard
+  Organization: your organization's name goes here
+  Version: 2.2.21
+
+- Class: text
+  Output: In this lesson, you will learn about measures of central tendency.
