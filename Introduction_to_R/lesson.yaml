@@ -68,4 +68,19 @@
   CorrectAnswer: x / x
   AnswerTests: omnitest(correctExpr = 'x / x')
   Hint: Type x / x and press Enter.
+  
+- Class: cmd_question
+  Output: R follows the standard order of operations in evaluating mathematical expressions. You can use parentheses to control the order in which math is performed. For example, in R, the symbol ^ is used for exponentiation. Evaluate the expression (2 + 3) - (2^2 * 3 - 2).
+  CorrectAnswer: (2 + 3) - (2^2 * 3 - 2)
+  AnswerTests: omnitest(correctExpr = '(2 + 3) - (2^2 * 3 - 2)')
+  Hint: Type (2 + 3) - (2^2 * 3 - 2) and press Enter.
+
+- Class: cmd_question
+  Output: Now, type (2 + 3 - 2^2) * (3 - 2). Will you get the same answer as before?
+  CorrectAnswer: (2 + 3 - 2^2) * (3 - 2)
+  AnswerTests: omnitest(correctExpr = '(2 + 3 - 2^2) * (3 - 2)')
+  Hint: Type (2 + 3 - 2^2) * (3 - 2) and press Enter.
+
+- Class: text
+  Output: Exactly. The answers are different becase the expressions were evaluated in different order. 
 
