@@ -1,0 +1,10 @@
+- Class: meta
+  Course: statistics_courses
+  Lesson: Data Structures
+  Author: Larry Pace
+  Type: Standard
+  Organization: Keiser University
+  Version: 2.2.21
+  
+- Class: text
+  Output: Hi again, Dr. Larry here. Today, we are going to learn about different R data structures. You have already learned about vectors. In this lesson, you will learn about other data structures including matrices, lists, and data frames. A matrix is a vector with dimensions. Unlike vectors, lists can contain multiple data types, as you will learn. The data frame is the most common way to represent data. Like a matrix, a data frame is rectangular, and like a list, a data frame can contain multiple data types. The data frame is a type of list, as you will find.

@@ -13,7 +13,7 @@
   Output: In this introductory lesson, we will discuss some of the basics of R. I highly recommend that you use RStudio for these lessons, although they will work fine with the regular version of R as well.
 
 - Class: text
-  Output: In R, everything is an "object" of some sort. We also work with "functions" in R. This makes R simultaneously object-oriented and functional. In this lesson, you will get a better feeling for functions and objects and how they work. R is a programming language and statistical computing environment rolled into one. The most basic use of R is as an interactive calculator. The R command prompt is >. It is R's way of telling you it is ready for your input.
+  Output: In R, everything is an "object" of some sort. We also work with "functions" in R. This makes R simultaneously object-oriented and functional. In this lesson, you will get a better feeling for functions and objects and how they work. R is a programming language and statistical computing environment rolled into one. The most basic use of R is as an interactive calculator. In R, the command prompt is >. It is R's way of telling you it is ready for your instructions. You type a command or expression, and R attempts to do what you have asked. If R can do it, it wil. If R does not understand what you are asking, it will throw an error. Sometimes, R does what you have asked, but gives you one or more warnings that something may not be quite right.
 
 - Class: cmd_question
   Output: To R, even a single number or character is a "vector." Other languages allow you to define a constant or scalar value, but R does not. To see what I mean, at the command prompt, type 2 + 2 and press Enter.
