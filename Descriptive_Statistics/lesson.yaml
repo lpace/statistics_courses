@@ -7,7 +7,7 @@
   Version: 2.2.21
 
 - Class: text
-  Output: In this lesson, you will learn about measures of central tendency and variability. The three common measures of central tendency are the mean, the median, and the mode. Each of these will be most appropriate in different situations. 
+  Output: In this lesson, you will learn about measures of central tendency and variability. The three common measures of central tendency are the mean, the median, and the mode. Each of these will be most appropriate in different situations. Similarly, we have different measures of variability, including the range, the variance, and the standard deviation. 
 
 - Class: cmd_question
   Output: You arleady have a data frame named cars in your workspace. Type cars and press Enter to see the data.
@@ -18,7 +18,14 @@
 - Class: text
   Output: For each of 54 individual cars, we have the type, the price in thousands of U.S. dollars, the miles per gallon obtained in the city, the type of drive train (front, rear or 4WD), the number of passengers the car will carry, and the weight of the car in pounds.
 
-- Class: figure
-  Output: Histogram of city mpg
-  Figure: 
-  FigureType: new
+- Class: cmd_question
+  Output: In this lesson, we will work with the city miles per gallon variable. Let's create a new variable to make that easier. At the command prompt, type myMPG <- cars$mpgCity and press Enter.
+  CorrectAnswer: myMPG <- cars$mpgCity
+  AnswerTests: omnitest(correctExpr = 'myMPG <- cars$mpgCity')
+  Hint: Type myMPG <- cars$mpgCity and press Enter.
+
+- Class: cmd_question
+  Output: As a measure of central tendency, the mean is the sum of the values in a dataset divided by the number of values. We could use R's built-in functions to calculate the mean by tying sum(myMPG) / length(myMPG), but it is faster and easier to use the built-in mean function. At the command prompt, type mean(myMPG) and press Enter.
+  CorrectAnswer: mean(myMPG)
+  AnswerTests: omnitest(correctExpr = 'mean(myMPG)')
+  Hint: TYpe mean(myMPG) and press Enter.

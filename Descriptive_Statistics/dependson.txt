@@ -1,3 +1,2 @@
 openintro
-fBasics
 prettyR
