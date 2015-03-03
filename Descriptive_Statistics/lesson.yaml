@@ -10,7 +10,7 @@
   Output: In this lesson, you will learn about measures of central tendency and variability. The three common measures of central tendency are the mean, the median, and the mode. Each of these will be most appropriate in different situations. Similarly, we have different measures of variability, including the range, the variance, and the standard deviation. 
 
 - Class: cmd_question
-  Output: You arleady have a data frame named cars in your workspace. Type cars and press Enter to see the data.
+  Output: You already have a data frame named cars in your workspace. Type cars and press Enter to see the data.
   CorrectAnswer: cars
   AnswerTests: omnitest(correctExpr = 'cars')
   Hint: Type cars and press Enter.
@@ -25,7 +25,47 @@
   Hint: Type myMPG <- cars$mpgCity and press Enter.
 
 - Class: cmd_question
-  Output: As a measure of central tendency, the mean is the sum of the values in a dataset divided by the number of values. We could use R's built-in functions to calculate the mean by tying sum(myMPG) / length(myMPG), but it is faster and easier to use the built-in mean function. At the command prompt, type mean(myMPG) and press Enter.
+  Output: The mean is the sum of the values in a dataset divided by the number of values. We could use R's built-in functions to calculate the mean by tying sum(myMPG) / length(myMPG), but it is faster and easier to use the built-in mean function. At the command prompt, type mean(myMPG) and press Enter.
   CorrectAnswer: mean(myMPG)
   AnswerTests: omnitest(correctExpr = 'mean(myMPG)')
   Hint: TYpe mean(myMPG) and press Enter.
+  
+- Class: text
+  Output: The mean is the "center of gravity" of the dataset. If you were to subtract the mean from every value in the dataset to get what are called deviation scores, the sum and average of these deviation scores would be zero. The positive and negative deviations balance each other out. From a statistical standpoint, the mean is the most useful measure of central tendency because it is used in the calculation of other statistics like the variance and standard deviation.
+
+- Class: text
+  Output: One difficulty with the mean is that it is "pulled" in the direction of extreme values. In this sense, the mean is not robust. Another measure of central tendency, the median, is robust. It is not affected by extreme values the way the mean is. The built-in R function for the median is median(), as you might have guessed!
+
+- Class: cmd_question
+  Output: To see the median of the myMPG variable, type median(myMPG) and press Enter.
+  CorrectAnswer: median(myMPG)
+  AnswerTests: omnitest(correctExpr = 'median(myMPG)')
+  Hint: Type median(myMPG) and press Enter.
+
+- Class: cmd_question
+  Output: Did you note that the mean is larger than the median? The mean is 23.31, and the median is 21. The median is the midpoint of the dataset. When the mean is greater than the median, the dataset is not symmetrical. The shape of the distribution of the data will be right-skewed. You can verify the shape of the dataset by using a histogram. At the command prompt, type hist(myMPG) and press Enter.
+  CorrectAnswer: hist(myMPG)
+  AnswerTests: omnitest(correctExpr = 'hist(myMPG)')
+  Hint: Type hist(myMPG) and press Enter.
+
+- Class: cmd_question
+  Output: The histogram shows that the data are stacked up on the left side and taper off on the right side. The extreme values on the right affect the mean, pulling it rightward. We will come back to this issue later, when we discuss skewness and kurtosis. For now, let's look at one last measure of central tendency, the mode. The mode is the most frequently occuring value in a dataset. A given dataset may have no mode, one mode, or multiple modes. The built-in R function mode() does not return the modal value of the dataset. Instead, it gives you the storage class of the object. At the command prompt, type mode(myMPG) and press Enter.
+  CorrectAnswer: mode(myMPG)
+  AnswerTests: omnitest(correctExpr = 'mode(myMPG)')
+  Hint: Type mode(myMPG) and press Enter.
+
+- Class: cmd_question
+  Output: Although there is not a function for the mode or modes built into the base version of R, you can use the table function to identify the mode or modes of a dataset. At the command prompt, type table(myMPG) and press Enter.
+  CorrectAnswer: table(myMPG)
+  AnswerTests: omnitest(correctExpr= 'table(myMPG)')
+  Hint: Type table(myMPG) and press Enter.
+
+- Class: text
+  Output: The table makes it clear that 19 is the mode. The order of the mode, median, and mean will tell us about the shape of the distribution. When the mode, median, and mean are very close to each other, the dataset is symmetrical in shape, having a mirror-image quality. When the three values differ widely, the dataset is assymetrical, as we saw earlier.
+
+- Class: cmd_question
+  Output: Most statistical software packages will report the mode of a dataset. I loaded the prettyR package for you at the beginning of the lesson. This package, among many other things, will find the mode if there is one. At the command prompt, type Mode(myMPG). Note the capital M.
+  CorrectAnswer: Mode(myMPG)
+  AnswerTests: omnitest(correctExpr = 'Mode(myMPG)')
+  Hint: Type Mode(myMPG) and press Enter.
+
